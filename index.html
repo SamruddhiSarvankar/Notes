@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Notes</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body onload="load()">
+    <div class="container-fluid d-grid gap-3 align-items-center mt-3" style="grid-template-columns: 1fr 2fr;">
+        <div class="dropdown">
+          <a href="#" class="d-flex align-items-center col-lg-4 mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
+            <svg class="bi me-2" width="40" height="32"><use xlink:href=""></use></svg>
+            <img src="../Notes/img/notes.png" width="40" height="32" alt="">
+          </a>
+          
+        </div>
+  
+        <div class="d-flex align-items-center">
+          <form class="w-100 me-3" role="search">
+            <input type="search" class="form-control" placeholder="Search..." aria-label="Search" id="searchid" onkeyup="search()">
+          </form>
+  
+          <div class="flex-shrink-0 dropdown">
+            <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+            </a>
+            <ul class="dropdown-menu text-small shadow" >
+              <li><a class="dropdown-item" href="#">New project...</a></li>
+              <li><a class="dropdown-item" href="#">Settings</a></li>
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Sign out</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+            <h1>Make notes here :)</h1>
+            <div class="col shadow p-3">
+                <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                </div>
+                <div id="uptodate">
+                    <input type="text" name="title" id="title" placeholder="title" class="form-control fs-2 text-body-emphasis">
+                    <textarea name="des" id="des" cols="30" rows="6" class="form-control mt-2 mb-2"></textarea>
+                    <h6>You can choose only one file</h6>
+                    <input type="file" id="input" multiple class="mt-2"/><br>
+                    <div id="file" class="mt-2"></div>
+                  <button type="button" class="btn btn-primary mt-2" id="add" onclick="fun()">Save</button>
+      <button type="button" class="btn btn-warning mt-2" id="" onclick="update1()">Update</button>
+                  
+
+                </div>
+              </div>
+        </div>
+      </div>
+
+      <div class="b-example-divider"></div>
+
+      <div class="container px-4 py-5" id="custom-cards">
+        <h2 class="pb-2 border-bottom">Here are your notes</h2>
+    
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5" id="allnotes">
+
+          <!-- <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" >
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <h3 class="pt-2 m-2 display-10 lh-1 fw-medium"></h3>
+                <i><p>awdefwe</p></i>
+                <ul class="d-flex list-unstyled mt-auto">
+                  
+                 
+                  <li class="d-flex align-items-center me-auto">
+                    <button class="btn btn-primary m-2" type="button">Edit</button> 
+                    <button class="btn btn-primary" type="button">Delete</button>
+                  </li>
+                  
+                  <li class="d-flex align-items-center me-3">
+                    <small>time</small>
+                    
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div> -->
+    
+          
+        </div>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+  </body>
+  <script src="./js/notes.js"></script>
+</html>
+
+
